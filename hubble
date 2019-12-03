@@ -1,0 +1,19 @@
+#################################
+## GitFS Config
+#################################
+##
+## Hubble doesn't ship with profiles. To get the default profiles, you can
+## subscribe via GitFS to the hubblestack_data repo. You must also have either
+## python-gitpython or python-pygit2 installed. (python-pygit2 is recommended
+## if available
+
+file_roots:
+  base:
+    - /srv/hubble
+
+fileserver_backend:
+  - roots
+
+
+#Set log level
+log_level: info
